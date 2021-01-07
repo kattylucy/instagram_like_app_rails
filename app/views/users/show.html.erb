@@ -1,0 +1,12 @@
+<div class="user_profile_container">
+    <img src="/assets/userp.png" />
+    <div class="user_information">
+        <h5><%= @user.name %></h5>
+        <span><%= @user.email %></span>
+    </div>
+    <% if @user == current_user %>
+    <div class="user_buttons">
+        <button class="btn btn-outline-dark common-btn">Edit Profile</button>
+    </div>
+    <% end %>
+</div>

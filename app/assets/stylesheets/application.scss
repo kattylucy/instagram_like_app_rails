@@ -1,10 +1,15 @@
 @import "bootstrap";
+@import 'toastr';
 
 body{
     background-color: #fafafa;
     color: #262626;
     font-size: 14px;
     margin: 0 20px;
+}
+
+.container{
+    margin-top: 40px;;
 }
 
 .navbar-brand img{
@@ -79,6 +84,17 @@ input{
     padding: 20px;
     width: 400px;
     text-align: center;
+}
+
+.user_profile_container{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    img{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 

@@ -8,6 +8,8 @@
     <ul class="navbar-list">
     <li>Like</li>
     <li>Explore</li>
-    <li>Profile</li>
+        <li>
+            <%= link_to "Profile", user_path(current_user) %>
+        </li>
     </ul>
 </nav>
