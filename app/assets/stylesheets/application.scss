@@ -97,6 +97,59 @@ input{
     }
 }
 
+.edit_container{
+    background-color: white;
+    border: 1px solid rgba(219,219,219, 1);
+    display: flex;
+    padding: 10px;
+}
+
+.tabs{
+    width: 20%;
+   h2{
+       font-size: 18px;
+       color: black;
+       padding: 5px 10px;
+       cursor: pointer;
+   } 
+}
+
+.edit_form{
+    .field{
+        display: flex;
+        margin: 20px 0px;
+        label{
+            align-self: center;
+            margin-right: 10px;
+            font-weight: 700;
+            width: 100px;
+        }
+        span{
+            margin-bottom: 20px;
+        }
+        input,
+        textarea{
+            height: 30px;
+            border: 1px solid rgb(180, 180, 180);
+            width: 300px;
+            border-radius: 5px;
+        }
+        textarea{
+            height: 50px;
+            resize: none;
+        }
+    }
+
+    .actions{
+       margin: 20px 0px;
+       display: flex;
+       justify-content: flex-end;
+       input{
+            height: 30px;
+        }
+    }
+}
+
 
 
 
