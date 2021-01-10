@@ -1,9 +1,19 @@
-<%= form_for @post, :html => {:multipart => true} do |f| %>
-    <%= f.label :content %>
-    <%= f.text_field :content %>
-    <%= file_field_tag "images[]", type: :file, multiple: true %>
+
+<div class="create-post">
+<h5>Create Post</h5>
+<%= form_for @post, :html => {:multipart => true, :class => "dropzone upload-images"} do |f| %>
+    <div class="post-content">
+        <img src="/assets/userp.png" />
+        <%= f.label :content %>
+        <%= f.text_area :content, placeholder: "Say something about this..." %> <br />
+    </div>
+    <div class="drop-area">
+        <span>+</span>
+        <%= file_field_tag "images[]", type: :file, multiple: true %><br />
+    </div>
     <%= f.submit "Submit" %>
 <% end %>
+</div>
 
 <%= @posts.each do |post| %>
     <p><%= post.content %></p>
