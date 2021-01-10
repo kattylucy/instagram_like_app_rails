@@ -199,7 +199,7 @@ input{
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 20px;
+            font-size: 30px;
             color: rgba(112, 112, 112, 0.498);
         }
         input{
@@ -208,7 +208,12 @@ input{
             width: 100%;
         }
     }
+}
 
+.each-post{
+    img{
+        text-indent: 0;
+    }
 }
 
 

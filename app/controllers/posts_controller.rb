@@ -26,6 +26,14 @@ class PostsController < ApplicationController
     def show
     end
 
+    def destroy
+        if @post.user == current_user
+            if @post.destroy
+                flash[:notice] = "Post deleted..."
+            end                
+        end
+    end
+
     private
 
     def find_post
