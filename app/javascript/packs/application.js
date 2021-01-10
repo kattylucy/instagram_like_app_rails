@@ -13,6 +13,7 @@ import "channels"
 //= require popper
 //= require bootstrap-sprockets
 //= require toastr
+//= require dropzone
 
 
 Rails.start()
